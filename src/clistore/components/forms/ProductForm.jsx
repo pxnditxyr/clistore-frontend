@@ -3,20 +3,19 @@ import { useForm } from '../../hooks/useForm';
 export const ProductForm = ({
     title,
     buttonText,
-    name,
-    description,
-    price,
-    image,
-    stock,
+    formProduct,
     handleInputChange,
     handleSubmit,
+    navigate,
+    id
 }) => {
 
+    const { name, description, price, image, stock } = formProduct;
 
     return (
         <form 
             className="bg-white py-6 px-10 shadow rounded-xl flex flex-col items-center w-96 gap-6"
-            onSubmit={ () => handleSubmit( event, { name, description, price, image, stock } ) }
+            onSubmit={ () => handleSubmit( event, formProduct, navigate, id ) }
             >
 
             <h1 className="text-3xl font-bold text-gray-600"> { title } </h1>
