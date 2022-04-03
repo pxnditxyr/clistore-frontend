@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 export const ProductItem = ({ product, deleteProduct, setProducts }) => {
 
     return (
-        <article className="flex flex-col bg-white px-4 py-5 rounded-xl justify-center items-center aspect-h-8 shadow-2xl gap-3">
+        <article className="flex flex-col bg-white px-4 py-5 rounded-xl justify-between items-center aspect-h-8 shadow-2xl gap-3">
             <section className="w-full aspect-w-3 aspect-h-3">
                 <img 
                     className="object-cover shadow-lg rounded-lg"
