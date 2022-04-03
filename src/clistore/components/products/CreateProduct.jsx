@@ -27,5 +27,5 @@ export const CreateProduct = () => {
                 navigate={ navigate }
                 />
         </div>
-    )
-}
+    );
+};

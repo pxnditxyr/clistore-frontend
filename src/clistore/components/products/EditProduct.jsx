@@ -41,5 +41,5 @@ export const EditProduct = () => {
                 id={ id }
                 />
         </div>
-    )
-}
+    );
+};

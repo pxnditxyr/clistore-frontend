@@ -13,8 +13,16 @@ export const AppRouter = () => {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={ <ShowProducts /> } />
-                <Route path="create" element={ <CreateProduct /> } />
-                <Route path="edit/:id" element={ <EditProduct /> } />
+                <Route path="create" element={
+                    <div className="h-screen w-full bg-teal-600 flex justify-center">
+                        <CreateProduct />
+                    </div>
+                } />
+                <Route path="edit/:id" element={ 
+                    <div className="h-screen w-full bg-teal-600 flex justify-center">
+                        <EditProduct />
+                    </div>
+                } />
             </Routes>
         </BrowserRouter>
     )

@@ -14,11 +14,11 @@ export const ProductForm = ({
 
     return (
         <form 
-            className="bg-white py-6 px-10 shadow rounded-xl flex flex-col items-center w-96 gap-6"
+            className="bg-white py-6 px-10 shadow-2xl rounded-xl flex flex-col items-center sm:w-96 gap-6"
             onSubmit={ () => handleSubmit( event, formProduct, navigate, id ) }
             >
 
-            <h1 className="text-3xl font-bold text-gray-600"> { title } </h1>
+            <h1 className="text-4xl font-bold text-gray-600"> { title } </h1>
 
             <input
                 type="text"
@@ -27,7 +27,8 @@ export const ProductForm = ({
                 placeholder="Name"
                 value={ name }
                 onChange={ handleInputChange }
-                className="border p-2 w-full bg-gray-200 text-lg rounded-lg"
+                className="border p-2 w-full bg-gray-200 text-lg rounded-lg focus:bg-teal-700 focus:placeholder-white focus:font-bold text-xl focus:outline-none focus:text-white"
+                required
             />
             <input
                 type="text"
@@ -36,7 +37,8 @@ export const ProductForm = ({
                 placeholder="Description"
                 value={ description }
                 onChange={ handleInputChange }
-                className="border p-2 w-full bg-gray-200 text-lg rounded-lg"
+                className="border p-2 w-full bg-gray-200 text-lg rounded-lg focus:bg-teal-700 focus:placeholder-white focus:font-bold text-xl focus:outline-none focus:text-white"
+                required
             />
             <input
                 type="number"
@@ -45,7 +47,8 @@ export const ProductForm = ({
                 placeholder="Price"
                 value={ price }
                 onChange={ handleInputChange }
-                className="border p-2 w-full bg-gray-200 text-lg rounded-lg"
+                className="border p-2 w-full bg-gray-200 text-lg rounded-lg focus:bg-teal-700 focus:placeholder-white focus:font-bold text-xl focus:outline-none focus:text-white"
+                required
             />
             <input
                 type="text"
@@ -54,7 +57,8 @@ export const ProductForm = ({
                 placeholder="Image"
                 value={ image }
                 onChange={ handleInputChange }
-                className="border p-2 w-full bg-gray-200 text-lg rounded-lg"
+                className="border p-2 w-full bg-gray-200 text-lg rounded-lg focus:bg-teal-700 focus:placeholder-white focus:font-bold text-xl focus:outline-none focus:text-white"
+                required
             />
             <input
                 type="number"
@@ -63,7 +67,8 @@ export const ProductForm = ({
                 placeholder="Stock"
                 value={ stock }
                 onChange={ handleInputChange }
-                className="border p-2 w-full bg-gray-200 text-lg rounded-lg"
+                className="border p-2 w-full bg-gray-200 text-lg rounded-lg focus:bg-teal-700 focus:placeholder-white focus:font-bold text-xl focus:outline-none focus:text-white"
+                required
             />
             <button
                 type="submit"
